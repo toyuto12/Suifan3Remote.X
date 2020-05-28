@@ -106,7 +106,8 @@ void main(void){
 			gInterval -= INTERVAL_10MS;
 			
 			uint8_t code = TaskInputCode();
-			if( code && IsSendIrEnable ){
+//			if( code && IsSendIrEnable ){
+			if( IsSendIrEnable ){
 				SendIr( 0x93, code );
 			}
 		}
